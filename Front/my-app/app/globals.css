@@ -6,7 +6,7 @@
   --ink: #1d2724;
   --muted: #6b746f;
   --line: #d7d8d0;
-  --accent: #d7f36b;
+  --accent: #010101;
   --deep: #29453e;
 }
 
@@ -28,7 +28,7 @@ body {
 .brand-panel { position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: center; padding: 8vw; color: #f1eee8; background: var(--deep); }
 .brand-panel::after { content: ""; position: absolute; width: 430px; height: 430px; right: -170px; bottom: -180px; border: 1px solid rgba(215,243,107,.35); border-radius: 50%; box-shadow: 0 0 0 42px rgba(215,243,107,.04), 0 0 0 84px rgba(215,243,107,.04); }
 .brand-mark { width: 46px; height: 46px; display: grid; place-items: center; margin-bottom: 48px; color: var(--deep); background: var(--accent); font-size: 24px; font-weight: 800; border-radius: 50%; }
-.eyebrow, .section-label { margin: 0 0 20px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .18em; }
+.eyebrow, .section-label { margin: 0 0 50px; color: black; font-size: 20px; font-weight: 5000; letter-spacing: .20em; }
 .brand-panel h1 { max-width: 460px; margin: 0; font-size: clamp(42px, 5vw, 72px); line-height: .98; letter-spacing: -2px; font-weight: 500; }
 .brand-copy { max-width: 360px; margin: 28px 0 0; color: #c6d0c8; font-size: 16px; line-height: 1.6; }
 .cipher-line { margin-top: 80px; color: rgba(215,243,107,.55); font-family: monospace; font-size: 12px; letter-spacing: .1em; }
@@ -61,7 +61,23 @@ button:disabled { cursor: wait; opacity: .7; }
 .cipher-form { display: grid; gap: 10px; }
 textarea { width: 100%; min-height: 150px; padding: 16px; border: 1px solid var(--line); border-radius: 2px; outline: none; resize: vertical; background: rgba(255,255,255,.35); color: var(--ink); font: inherit; }
 textarea:focus { border-color: var(--deep); box-shadow: 0 0 0 3px rgba(41,69,62,.1); }
+.draw-button { display: flex; align-items: center; justify-content: center; width: 100%; height: 54px; margin-top: 8px; padding: 0 20px; border: 0; border-radius: 2px; background: var(--deep); color: white; cursor: pointer; font: inherit; font-weight: 700; transition: background .2s, transform .2s; }
+.draw-button:hover { background: #1d3832; transform: translateY(-2px); }
 .primary-button { display: flex; align-items: center; justify-content: space-between; height: 54px; margin-top: 20px; padding: 0 20px; border: 0; border-radius: 2px; background: var(--deep); color: white; cursor: pointer; font: inherit; font-weight: 700; }
+.truco-table { display: grid; gap: 12px; margin-top: 14px; padding: 16px; border: 1px solid var(--line); background: rgba(255,255,255,.32); }
+.turned-card { display: flex; align-items: center; justify-content: space-between; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.turned-card > span, .truco-table > small { color: var(--muted); font-size: 12px; font-weight: 700; }
+.hand-cards { display: grid; grid-template-columns: repeat(3, 84px); justify-content: center; gap: 10px; }
+.playing-card { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 84px; min-height: 116px; padding: 18px 10px 12px; overflow: hidden; border: 1px solid #c9c9c4; border-radius: 8px; background: #fffefa; box-shadow: 0 4px 0 #d9d7cf, 0 8px 16px rgba(29,39,36,.12); color: var(--ink); }
+.playing-card::after { content: ""; position: absolute; inset: 5px; border: 1px solid rgba(29,39,36,.1); border-radius: 5px; pointer-events: none; }
+.playing-card strong { font-size: 42px; line-height: 1; font-weight: 500; }
+.card-corner { position: absolute; top: 10px; left: 10px; display: grid; gap: 1px; color: inherit; font-size: 18px; font-weight: 800; line-height: 1; }
+.card-corner small { font-size: 14px; }
+.card-suit { margin-top: 8px; color: inherit; font-size: 9px; font-weight: 700; letter-spacing: .08em; }
+.playing-card.red-suit { color: #b33a3a; }
+.playing-card.black-suit { color: var(--ink); }
+.turned-playing-card strong { font-size: 34px; }
+.turned-playing-card .card-suit { display: none; }
 .result-box { display: grid; gap: 10px; margin-top: 34px; padding: 24px; border-left: 4px solid var(--accent); background: white; }
 .result-box span, .result-box small { color: var(--muted); font-size: 12px; font-weight: 700; }
 .result-box strong { color: var(--ink); font-size: 20px; line-height: 1.5; overflow-wrap: anywhere; }

@@ -58,11 +58,11 @@ export default function Home() {
   return (
     <main className="auth-shell">
       <section className="brand-panel">
-        <div className="brand-mark">C</div>
-        <p className="eyebrow">CIFRA DE CESAR</p>
+        <h1 >♦ ♠ ♥ ♣</h1>
+        <p className="eyebrow">TRUCO DE CESAR</p>
         <h1>Suas mensagens, sob seu controle.</h1>
         <p className="brand-copy">Entre para continuar sua experiência de criptografia com segurança e simplicidade.</p>
-        <div className="cipher-line" aria-hidden="true">A  B  C  D  E  F  G  H  I  J  K  L  M</div>
+        <div className="cipher-line" aria-hidden="true">A  B  C  D  E  F  G  H  I  J  K  L  M N O P Q R S T U V W X Y Z</div>
       </section>
 
       <section className="form-panel">
