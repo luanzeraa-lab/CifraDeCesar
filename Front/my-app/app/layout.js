@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Cifra de Cesar | Acesso",
-  description: "Acesse sua conta da Cifra de Cesar",
+  title: "Baralho de Cesar",
+  description: "Criptografia de mensagens com cartas",
 };
 
 export default function RootLayout({ children }) {

@@ -52,7 +52,7 @@ button:disabled { cursor: wait; opacity: .7; }
 .workspace-header h1 { margin: 0; color: var(--ink); font-size: clamp(36px, 5vw, 64px); font-weight: 500; letter-spacing: -2px; }
 .logout-button { border: 1px solid var(--line); padding: 11px 18px; border-radius: 2px; background: transparent; color: var(--ink); cursor: pointer; font: inherit; }
 .workspace-nav { display: flex; gap: 30px; max-width: 1080px; margin: 68px auto 0; border-bottom: 1px solid var(--line); }
-.nav-option { padding: 0 0 16px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); cursor: pointer; font: inherit; font-weight: 700; }
+.nav-option { padding: 0 0 16px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); cursor: pointer; font: inherit; font-weight: 700; text-decoration: none; }
 .nav-option.active { border-bottom-color: var(--deep); color: var(--deep); }
 .cipher-workspace { max-width: 1080px; margin: 54px auto; }
 .workspace-intro { margin-bottom: 34px; }
